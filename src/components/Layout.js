@@ -4,10 +4,16 @@ import Header from "./Header";
 
 class Layout extends React.Component {
   render() {
+    var list = [
+      <li/>,
+      <li/>,
+      <li/>,
+    ];
+
     return (
-      <div>
- <Header/>
-      </div>
+      <ol>
+        {list}
+      </ol>
 
     );
   }
