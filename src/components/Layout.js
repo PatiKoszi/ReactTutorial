@@ -4,10 +4,8 @@ import Footer from "./Footer";
 
 
 class Layout extends React.Component {
-  constructor () {
-    super();
-    this.state = {name: "Patryk"};
-  }
+ state = {name: "Patryk"};
+
 
   render() {
     setTimeout(() => {
