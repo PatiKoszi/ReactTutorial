@@ -9,7 +9,8 @@ class Layout extends React.Component {
 
      return (
        <div>
-         <Header name={"Some thing"} title={title}/>
+         <Header title={title}/>
+         <Header title={"Other title"}/>
          <Footer/>
        </div>
 
