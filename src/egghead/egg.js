@@ -5,7 +5,7 @@ class Egg extends React.Component {
     super();
     this.state = {
       txt: 'This is text from state',
-      cat: 0,
+      cat: 2,
     }
   }
 
@@ -18,8 +18,7 @@ class Egg extends React.Component {
     return (
       <div>
         <h1> Input</h1>
-        <input type="text"
-               onChange={this.update.bind(this)}/>
+        <Widget update={this.update.bind(this)}/>
 
         <h1>{txt}</h1>
         <h1>{this.state.txt} - {this.state.cat}</h1>
@@ -27,5 +26,8 @@ class Egg extends React.Component {
     )
   }
 }
+
+const Widget = (props) =>
+  <input onChange={props.update} />
 
 export default Egg;
