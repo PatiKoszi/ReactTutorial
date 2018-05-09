@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Egg text="this idds the prop text"/>
+        <Egg cat ={5} text="This is text from props"/>
       </div>
 
     )

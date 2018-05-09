@@ -4,7 +4,8 @@ class Egg extends React.Component {
   constructor() {
     super();
     this.state = {
-      txt: ' this is the state'
+      txt: 'This is text from state',
+      cat: 0,
     }
   }
 
@@ -21,7 +22,7 @@ class Egg extends React.Component {
                onChange={this.update.bind(this)}/>
 
         <h1>{txt}</h1>
-        <h1>{this.state.txt} </h1>
+        <h1>{this.state.txt} - {this.state.cat}</h1>
       </div>
     )
   }
