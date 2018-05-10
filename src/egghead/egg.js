@@ -18,7 +18,7 @@ class Egg extends React.Component {
     return (
       <div>
         <h1> Input</h1>
-        <Widget update={this.update.bind(this)}/>
+        <Foo update={this.update.bind(this)}/>
 
         <h1>{txt}</h1>
         <h1>{this.state.txt} - {this.state.cat}</h1>
@@ -27,7 +27,7 @@ class Egg extends React.Component {
   }
 }
 
-const Widget = (props) =>
+const Foo = (props) =>
   <input onChange={props.update} />
 
 export default Egg;
